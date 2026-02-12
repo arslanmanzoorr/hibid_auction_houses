@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/get-company-list",
+      "dest": "/api/get_company_list.py"
+    },
+    {
+      "src": "/api/get-company-details",
+      "dest": "/api/get_company_details.py"
+    }
+  ]
+}
